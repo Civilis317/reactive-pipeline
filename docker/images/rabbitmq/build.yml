@@ -1,0 +1,9 @@
+# docker build properties
+docker:
+  registry:
+    host: 172.16.100.140
+    port: 6010
+
+image:
+  name: boip.infra.cesb.general/rabbitmq
+  version: latest

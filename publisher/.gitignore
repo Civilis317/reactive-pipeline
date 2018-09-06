@@ -1,6 +1,5 @@
 /target/
-parent/logs/
-publisher/.mvn/
+!.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
 .apt_generated
@@ -24,6 +23,3 @@ publisher/.mvn/
 /dist/
 /nbdist/
 /.nb-gradle/
-
-### Mac ###
-.DS_Store

@@ -1,0 +1,17 @@
+spring:gi
+  profiles:
+    include:
+      - "default"
+
+logging:
+  level:
+    net.playground.reactive.demo: "DEBUG"
+
+server:
+  port: 8080
+
+management:
+  endpoint:
+    logfile:
+      external-file: "logs/publisher.log"
+

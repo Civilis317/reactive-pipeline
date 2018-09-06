@@ -1,0 +1,23 @@
+app:
+  name: "@project.artifactId@"
+  version: "@project.version@"
+
+logging:
+  level:
+    ROOT: "INFO"
+    org.springframework: "INFO"
+    net.playground.reactive.demo: "INFO"
+
+server:
+  servlet:
+    context-path: "/publisher"
+
+# for actuator endpoints (spring boot 2)
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    logfile:
+      external-file: "/var/log/reactivedemo/publisher.log"
